@@ -5,28 +5,29 @@
     git
     kitty
     alacritty
+    fish
     wget
     unzip
     firefox
-    rofi-wayland                                                                                                                                                    
+    rofi-wayland
+    wofi                                                                                                                                                    
     ags                                                                                                                                                                               
     openssh
     hugo                                                                                                                                                                              
     neofetch                                                                                                                                                                          
     btop 
-    networkmanager-openvpn
-    openvpn 
-    pulseaudio
-    pavucontrol
     font-awesome                                                                                                                                                                            
     xfce.thunar                                                                                                                                                                       
     xfce.thunar-volman  
     wl-clipboard 
     grim
     slurp
-    swappy  
-    powertop
-    brightnessctl                                                                                                                                                            
+    swappy                                                                                                                                                    
+    ags                                                                                                                                                                               
+    networkmanager-openvpn
+    openvpn 
+    pulseaudio
+    pavucontrol                                                                                                                                                                             
+    powertop  
   ];                            
 }
-

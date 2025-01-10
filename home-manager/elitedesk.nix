@@ -12,8 +12,10 @@
   imports = [
     ./features/cli
     ./features/helix
+    ./features/productivity
     ./features/desktop/hyprland
-    ./features/desktop/productivity
+    ./features/desktop/waybar
+    ./features/desktop/rofi
     ./features/desktop/wireless
     inputs.nix-colors.homeManagerModules.default
   ];

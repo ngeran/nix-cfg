@@ -1,5 +1,6 @@
 {
   imports = [
+    ./packages.nix
     ./fish
     ./neovim.nix
     ./ranger.nix

@@ -7,7 +7,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     stylix.url = "github:danth/stylix";
     nix-colors.url = "github:misterio77/nix-colors";
-    hardware.url = "github:nix-systems/nixos-hardware"; 
+ #   hardware.url = "github:nix-systems/nixos-hardware"; 
     
     hyprland-plugins = {
 	url = "github:hyprwm/hyprland-plugins";
@@ -67,19 +67,18 @@
               inherit inputs outputs;
           };
        };
-    };
 
-    #HP ELITEDESK ( Workstation )
-       "nikos" = lib.homeManagerConfiguration {
-          modules = [ ./hosts/elitedesk/elitedesk.nix ];
+        #HP ELITEDESK ( Workstation )
+       "nikos2" = lib.homeManagerConfiguration {
+          modules = [ ./home-manager/elitedesk.nix ];
           # Specify the host architecture
 	        pkgs = nixpkgs.legacyPackages.${system};
           extraSpecialArgs = {
               inherit inputs outputs;
           };
        };
+
     };
 
   };
-  
 }

@@ -9,7 +9,7 @@
       inputs.hardware.nixosModules.common-pc-ssd
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../common/global
+      ../common/global/desktop
       ../common/optional/pipewire.nix
       ../common/optional/bluetooth.nix
     ];
