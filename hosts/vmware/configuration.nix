@@ -15,25 +15,23 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # networking.hostName = "nixos"; # Define your hostname.
+  # Define your hostname.
+  networking.hostName = "vmware"; 
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-    networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Set your time zone.
-    time.timeZone = "America/New_York";
+  time.timeZone = "America/New_York";
 
   # Install Hyprland 
   programs.hyprland.enable = true;
   programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland; 
 
   # $ nix search wget
-    environment.systemPackages = with pkgs; [
-      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-      wget
-      neovim
-      git
-    ];
+  environment.systemPackages = with pkgs; [
+      
+  ];
 
     services.openssh.enable = true;
  
